@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Controle Financeiro</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>💰 Controle Financeiro</header>
+
+<div class="container">
+    <label>Descrição</label>
+    <input type="text" id="descricao" placeholder="Ex: Salário, Conta de luz" />
+
+    <label>Valor</label>
+    <input type="number" id="valor" step="0.01" placeholder="Ex: 250 ou 1300.50" />
+
+    <label>Tipo</label>
+    <select id="tipo">
+    <option value="receber">A Receber</option>
+    <option value="dever">A Pagar</option>
+    </select>
+
+    <button onclick="adicionarItem()">Adicionar</button>
+
+    <div class="list" id="lista"></div>
+
+    <div class="total" id="total">Total: R$ 0,00</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
